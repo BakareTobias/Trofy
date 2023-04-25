@@ -93,17 +93,8 @@ section {
   color: #000000;
 }
 
-#products {
-  margin: 15px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .listings {
-  padding: 15px;
-  margin: 20px;
   border-width: 5px;
-  width: 270px;
   height: 350px;
   border-radius: 10px;
 }

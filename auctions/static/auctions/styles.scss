@@ -32,8 +32,8 @@ section{
 /* INDEX PAGE */
 #categories{ @extend .text; background-color: #74d6ec;  }
 #category_each{ @extend .text;  border-radius: 3px ;  color: #000000;}
-#products{margin: 15px;  display: flex;  flex-wrap: wrap;}
-.listings {padding: 15px; margin: 20px; border-width: 5px; width:270px; height: 350px; border-radius: 10px; }
+
+.listings {  border-width: 5px;  height: 350px; border-radius: 10px; }
 .listings:hover{ box-shadow: 0 0 20px $freshBlue;}
 #product_image{height: 200px; width: 200px;}
 .images{ height: 300px; width: 400px; background-color: #74d7ec;} 
@@ -93,24 +93,3 @@ p{
 }
 
 
-/*set the default color of the stars*/
-.star-rating{
-    color: #e94a4a;
-    font-size:2em;
-}
-/*create the star*/
-.my-star::before{
-    content:"\002605";
-}
-/*remove the default style (italic) of the star*/
-.my-star{
-    font-style: unset !important;
-}
-/*set active star color*/
-.is-active{
-    color:#fb8900;
-}
-/*set color on hover*/
-.my-star:not(.is-active):hover{
-    color: #fb8900;
-}
