@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'e-commerce-website-wq0d.onrender.com',
+    'trofy-4rb3.onrender.com',
     'localhost',
 ]
 
