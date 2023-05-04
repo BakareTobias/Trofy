@@ -4,9 +4,9 @@
     <h3 id="watchlist_header">My Watchlist</h3>
     {%for listing in watchlist%}
         <a href="{% url 'listing' listing.item_id.pk %}" id="productTitle" style="margin: 20px;">{{ listing }}</a> <br>
-
+        
     {%empty%}
-        Your watchlist is empty. You should add some items 
+        Your Cart is empty. You should add some items 
     {%endfor%}
     
 

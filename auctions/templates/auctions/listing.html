@@ -21,12 +21,18 @@
                     <hr>
                     <div id="starting_price" > <u>Price</u>  <h5 class="price"> ${{ listing.Starting_price}} </h5> 
                     </div>
-                  <form action="" method="post">
+                 <!--  <form action="" method="post">
                         {% csrf_token %}
                         <h5>No. of Items</h5>
                         <input type="number" id="quantity" name="quantity" min="1" max="1000" value="0">
                         <input type="submit" value="Place order">
+                  </form> -->
+                  <form action="{% url 'watchlist_add' listing.id %}" method="post">
+                    {%csrf_token%}
+                    <button class="btn btn-primary  mt-2" >Add to Cart</button>
                   </form>
+                  
+                  
                  
                    
 
@@ -34,7 +40,7 @@
             </div>
         </div>
         <div id="Categories"> <br>
-            View other listings in: <a href="{% url 'categories' listing.category.Category %}">{{listing.category}}</a> 
+            View other foods in: <a href="{% url 'categories' listing.category.Category %}">{{listing.category}}</a> 
 
         </div>
         <hr>

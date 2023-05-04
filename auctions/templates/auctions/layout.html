@@ -30,13 +30,13 @@
                         
                         {% if user.is_authenticated %}
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'profile' user.id %}">Account</a>
+                                <a class="nav-link" href="{% url 'profile' user.id %}">My Account</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'createListing' %}">Create a Listing</a>
+                                <a class="nav-link" href="{% url 'createListing' %}">Randomizer</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'watchlist' %}">Watchlist</a>  
+                                <a class="nav-link" href="{% url 'watchlist' %}">Cart</a>  
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
